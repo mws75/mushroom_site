@@ -1,0 +1,241 @@
+/* universal selector: effects all elements */
+
+* {
+        box-sizing: border-box;
+}
+
+/* ====== css styling for main body  ====== */
+
+  
+body {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        letter-spacing: .5px;
+}
+
+.media {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+/* css styling for forms ========= */
+
+input[type="text"] {
+  width: 10em;
+  margin-bottom: .6em;
+  background-color: #E9E9E9;
+}
+
+
+.assignment-form {
+color: #CC6666;
+
+}
+
+
+/* css styling for banner */
+
+.banner {
+        background-color: #CC3333;
+        min-height: 5em;
+        border-bottom: 5px solid white;
+        padding: 2em; 
+        
+}
+
+/* css styling for image in banner */
+
+.banner img {
+   position:fixed;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   width: 5%;
+
+}
+
+/* css styling for heading 1 in banner */
+
+.banner h1 {
+
+	color: white;       
+    margin: 0;
+    text-align: center;
+}
+        
+h2 {
+        
+    margin: 0;
+	text-align: left;
+}
+
+/* css styling for paragraph */
+
+.p {
+
+font-size: 80%;
+
+}
+
+/* css styling for :back to top" link */
+
+.top {
+
+text-align: center;
+
+}
+/* css styling for strong elements */
+
+strong {
+font-style: italic;
+}
+
+/* css styling for main element */ 
+
+main {
+        padding: 4em;
+}
+
+
+
+
+/* ======= css styling for menu ======= */
+     
+.primary-menu ul {
+  display: flex;
+  list-style-type:none;
+  padding: 0;
+  margin: 0;
+  color: black;
+  background-color:#FF9999;
+}
+         
+.primary-menu a {
+  display: block;
+  padding: .03em 1em;
+  text-decoration:none;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  background-color:#FF9999;
+}
+         
+.primary-menu a:hover {
+  background-color: #CC9999;
+}
+
+/* css styling for un ordered list */
+
+.list ul {
+		color: white;
+		list-style-type: none;
+		
+	} 
+
+/* css styling for table */
+
+.table {
+
+  border-collapse: collapse;
+  background-color: #CC6666;
+
+  
+}
+
+.table, .table td {
+  border: 2px dashed #CC0033;
+}
+
+.table td {
+  padding: 6px;
+}
+
+/* css styling for table footer */
+
+tfoot tr td {
+text-align: center;
+}
+
+/* css styling for un-order list */
+
+main ul ul li {
+list-style: circle;
+color: #CC6666;
+font-weight: bold;
+}
+
+/* css styling for sidebar */
+
+.sidebar {
+        padding: 2em;
+   		background-color: #CC6666;
+   		
+}
+ /* css styling for footer */
+ 
+.site-footer {
+		color: white;
+		text-align: center;
+        min-height: 6em;
+        background-color: #CC3333;
+        border-top: 5px solid white;
+}
+
+/* ======= makes image and video elements flexible ====== */
+
+img, video {
+     max-width: 100%;
+     height: auto;
+   }
+ 
+
+ /* media query rule: styling for desktops only */ 
+  
+  @media (min-width: 768px) {
+  
+  .navigation ul {
+    display: flex;
+  }
+
+/* css styling for wrapper- determines width of elements or postion/grid locations */
+
+   .wrapper {
+   display: grid;
+   grid-template-rows: auto auto minmax(6em, auto);
+   grid-template-columns: 3fr 1fr;
+   
+}
+
+.content-wrapper {
+		overflow: hidden;
+		max-width: 1400px;
+		margin: 0 auto;	
+	}
+	
+
+/* css styling dictates grid locations */
+
+  .banner {
+   grid-column: 1 / 3;
+}
+
+main {
+   grid-column: 1 / 2;
+}
+
+.sidebar {
+   grid-column: 2 / 3;
+}
+
+.site-footer {
+   grid-column: 1 / 3;
+}
+
+
+} /* end of media */

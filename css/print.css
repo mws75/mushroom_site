@@ -1,0 +1,44 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* print relative urls as absolute urls */
+a:not([href^="http"])::after {
+  content: " (https://40px.us/resources/a9-example/" attr(href) ")";
+}
+
+a[href^="#"] {
+  display: none;
+}
+
+.media iframe {
+  display: none;
+}
+
+/* print source url for media (see lecture) */
+.media::after {
+  content: " [Media URL: " attr(data-url) "]";
+}
+
+/* hide intra-page links, iframe embeds, nav elements, elements with 'no-print' class, img elements in sidebar, banner, footer */
+a[href^="#"], img, .media iframe, nav, .no-print, .sidebar img, .banner img, .site-footer img {
+  display: none;
+}
+       
+table, td, th {
+  border-collapse: collapse;
+  border: 1px solid #808080;
+}
+
+/* borders to separate sections of content */
+.banner, main, .sidebar {
+  border-bottom: 1px dotted #808080;
+}
+       
+.banner, .site-footer {
+  text-align: center;
+  font-style: italic;
+}
+
+
+

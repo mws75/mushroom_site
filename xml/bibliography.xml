@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bibliography>
+   <book>
+      <title>National Aubdorn Society Field Guide To Mushrooms</title>
+      <author>Gary Lincoff</author>
+      <year>1866</year>
+      <publisher>Knopf</publisher>
+   </book>
+   <book>
+      <title>Mushrooms Demystified</title>
+      <author>David Arora</author>
+      <year>1986</year>
+      <publisher>Ten Speed Press</publisher>
+</book>
+ <book>
+      <title>The Complete Mushroom Hunter</title>
+      <author>Gary Lincoff</author>
+      <year>2017</year>
+      <publisher>Quarry Books</publisher>
+    </book>
+   <book>
+      <title>Peterson Field Guide to Mushrooms of North America</title>
+      <author>Karl B.McKnight &amp; Joseph R. Rohrer</author>
+      <year>2021</year>
+      <publisher>Houghton Mifflin Harcourt</publisher>
+    </book>
+   <book>
+       <title>Foraging for Survival: Edible Wild Plants of North America</title>
+      <author>Douglas Boudreau &amp; Mykel Hawke</author>
+      <year>2020</year>
+      <publisher>Skyhorse</publisher>
+   </book>
+</bibliography>
